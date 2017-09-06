@@ -95,8 +95,7 @@ public class GlideMan {
         private boolean isRound;
         private boolean isAnimation;
 
-        public Builder(Context c) {
-            this.c = c;
+        public Builder() {
             this.currentType = 0;
             this.isOverride = false;
             this.isCircle = false;
@@ -175,6 +174,7 @@ public class GlideMan {
         }
 
         public GlideMan into(ImageView iv) {
+            this.c = iv.getContext();
             this.iv = iv;
             GlideMan glide = new GlideMan(this);
             glide.load();

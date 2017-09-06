@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void load_default(View view) {
-        new GlideMan.Builder(this)
+        new GlideMan.Builder()
                 .load(URL)
                 .into(imageView);
     }
 
     public void load_circle(View view) {
-        new GlideMan.Builder(this)
+        new GlideMan.Builder()
                 .load(URL)
                 .circle()
                 .dotAnimation()
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void load_round(View view) {
-        new GlideMan.Builder(this)
+        new GlideMan.Builder()
                 .load(URL)
                 .round(10)
                 .dotAnimation()
