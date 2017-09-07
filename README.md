@@ -7,8 +7,8 @@ Glide图片加载框架的简单二次封装（建造者模式）
 <table>
     <tr>
         <td><img src="http://perry.ren/glideman/img1.jpg"></td>
-        <td><img src="http://perry.ren/glideman/img1.jpg"></td>
-        <td><img src="http://perry.ren/glideman/img1.jpg"></td>
+        <td><img src="http://perry.ren/glideman/img2.jpg"></td>
+        <td><img src="http://perry.ren/glideman/img3.jpg"></td>
     </tr>
 </table>
 </br></br>  
