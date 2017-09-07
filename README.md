@@ -4,11 +4,18 @@ Glide图片加载框架的简单二次封装（建造者模式）
 ###### 加载url、res、file、asset、path图片
 ----------
 ### 效果图:</br>
-<div align=center><img width="30%" src="http://perry.ren/glideman/img1.jpg"/>  <img width="30%" src="http://perry.ren/glideman/img2.jpg"/>  <img width="30%" src="http://perry.ren/glideman/img3.jpg"/></div>
-</br></br>
-### 依赖：</br>
-----------
- ##### Step 1.
+<table>
+    <tr>
+        <td><img src="http://perry.ren/glideman/img1.jpg"></td>
+        <td><img src="http://perry.ren/glideman/img1.jpg"></td>
+        <td><img src="http://perry.ren/glideman/img1.jpg"></td>
+    </tr>
+</table>
+</br></br>  
+
+### 依赖：</br>  
+----------  
+ ##### Step 1.  
  ###### 添加Jitpack到您的root gradle，如果无法导包，一般情况下都是这个原因，请仔细检查
  ```xml
      allprojects {
