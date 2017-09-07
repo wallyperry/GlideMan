@@ -32,7 +32,7 @@ Glide图片加载框架的简单二次封装（建造者模式）
 		compile 'com.github.weipeilong123:GlideMan:1.0.2'
 	}
  ```
- </br></br>
+ </br>
   ----------
  ## 使用方法：</br>
  ###### 1.加载图片
@@ -68,4 +68,18 @@ Glide图片加载框架的简单二次封装（建造者模式）
   ```xml
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile 'jp.wasabeef:glide-transformations:2.0.2'
+   ```
+</br>
+----------
+## ProGuard：</br>
+###### 这里贴一下Glide的混淆规则：  
+  ```xml
+    -keep public class * implements com.bumptech.glide.module.GlideModule
+	-keep public class * extends com.bumptech.glide.AppGlideModule
+	-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+	  **[] $VALUES;
+	  public *;
+	}
+	# for DexGuard only
+	-keepresourcexmlelements manifest/application/meta-data@value=GlideModule
    ```
